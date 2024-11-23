@@ -1,0 +1,57 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8c8d8; /* Light pink background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f76b8a; /* Pink button */
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f53f6e; /* Darker pink when hovered */
+}
+
+/* Message and Image Display */
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.images img {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
