@@ -7,51 +7,99 @@
 
 /* Body and Background */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8c8d8; /* Light pink background */
+    font-family: 'Arial', sans-serif;
+    background-color: #ffb3d9; /* Light pink background */
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 /* Container */
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    text-align: center;
+    background-color: #ff66b2; /* Vibrant pink background */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    transition: transform 0.3s ease;
 }
 
-/* Headings */
+/* Container Hover Effect */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Heading */
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Button Styles */
 button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin: 10px;
-    background-color: #f76b8a; /* Pink button */
+    background-color: #ff4d94; /* Pink button */
     border: none;
     color: white;
     font-size: 1.2em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px;
 }
 
 button:hover {
-    background-color: #f53f6e; /* Darker pink when hovered */
+    background-color: #ff3399; /* Darker pink when hovered */
+    transform: translateY(-5px); /* Slight lift effect */
 }
 
-/* Message and Image Display */
+button:active {
+    transform: translateY(2px); /* Button press effect */
+}
+
+/* Message and Images Section */
 .message {
-    margin-top: 20px;
-    font-size: 1.5em;
+    margin-top: 30px;
+    font-size: 1.8em;
     color: #fff;
+    font-family: 'Arial', sans-serif;
 }
 
 .images img {
     width: 80%;
-    max-width: 300px;
+    max-width: 350px;
     margin-top: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.1); /* Slight zoom effect on images */
+}
+
+/* Animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-in;
 }
